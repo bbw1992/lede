@@ -8,8 +8,11 @@
 name: OpenWrt-CI
 
 on:
-  schedule:
-    - cron: 0 01 21 * *
+  push:
+    branches: 
+      - master
+#   schedule:
+#     - cron: 0 01 21 * *
   release:
     types: [published]
 
